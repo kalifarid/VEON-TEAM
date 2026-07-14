@@ -459,7 +459,7 @@
           </div>
           <div class="form-field">
             <label for="appHelp">Bizi haradan kəşf etdiniz?</label>
-            <input type="text" id="appHelp" placeholder="Məs. İnstagram,Youtube,Telegram...">
+            <input type="text" id="appFrom" placeholder="Məs. İnstagram,Youtube,Telegram...">
           </div>
           <div class="form-field full">
             <label for="appWhy">Nəyə görə biz?</label>
@@ -575,6 +575,7 @@
   const appAge = document.getElementById('appAge');
   const appField = document.getElementById('appField');
   const appHelp = document.getElementById('appHelp');
+  const appFrom = document.getElementById('appFrom');
   const appWhy = document.getElementById('appWhy');
   const shareWhatsapp = document.getElementById('shareWhatsapp');
   const shareEmail = document.getElementById('shareEmail');
@@ -586,6 +587,7 @@
       `Yaş: ${appAge.value.trim() || '-'}`,
       `Məşğul olduğu sahə: ${appField.value.trim() || '-'}`,
       `Bizə necə kömək olacaq: ${appHelp.value.trim() || '-'}`,
+      `Bizi haradan kəşf edib: ${appFrom.value.trim() || '-'}`,
       `Niyə bizi sevir: ${appWhy.value.trim() || '-'}`,
       `Mesaj: ${ideaText.value.trim() || '-'}`
     ];
